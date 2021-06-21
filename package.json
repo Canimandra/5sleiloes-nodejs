@@ -1,0 +1,39 @@
+{
+    "name": "5sleiloessocketserver",
+    "version": "0.9.1",
+    "description": "Socket for 5SLeiloes Realtime",
+    "license": "ISC",
+    "homepage": "https://www.5sleiloes.com.br",
+    "main": "src",
+    "author": {
+        "name": "Josemar Lohn",
+        "email": "j@lo.hn"
+    },
+    "private": true,
+    "contributors": [],
+    "bugs": {},
+    "directories": {
+        "lib": "src",
+        "test": "test/",
+        "config": "config/"
+    },
+    "engines": {
+        "node": "^14.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "scripts": {
+        "eslint": "eslint src/. test/. --config .eslintrc.json",
+        "dev": "pm2-docker start pm2.yml",
+        "start": "pm2-docker start pm2.yml"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "node-schedule": "^1.3.2",
+        "socket.io": "^2.0.0",
+        "follow-redirects": "^1.13.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.18.0"
+    }
+}

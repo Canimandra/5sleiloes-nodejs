@@ -1,0 +1,11 @@
+apps:
+  - script: src
+    watch: "src"
+    env:
+    NODE_ENV: development
+    instance_var: "INSTANCE_ID"
+    max_restarts: 0
+    restart_delay: 500
+    watch_options:
+      usePolling: true
+      interval: 500
